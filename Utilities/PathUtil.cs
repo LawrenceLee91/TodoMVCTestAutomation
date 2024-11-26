@@ -6,7 +6,6 @@ namespace TodoMVC.Utilities
     {
         public static string GetReportDirectory(ref string baseReportDirectory)
         {
-            //string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
             string baseDirectory = Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "Reports");
 
             baseReportDirectory = Path.Combine(baseDirectory, "Report_" + DateTime.Now.ToString("yyyyMMdd_HHmmss"));

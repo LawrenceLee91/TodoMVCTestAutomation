@@ -8,7 +8,7 @@ namespace TodoMVC.Utilities
 
         static ConfigUtil()
         {
-            string appSettingPath = Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.Parent.FullName, "TodoMVCTestAutomation");
+            string appSettingPath = Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName);
             
             // Build configuration from appsettings.json
             Configuration = new ConfigurationBuilder()
