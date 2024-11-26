@@ -211,23 +211,26 @@ Use Visual Studion's **Nuget Package Manage** to install the following dependenc
 - <code>Selenium WebDriver</code> (4.27.0)
 
 ### Steps:
-#### 1. Clone the repository:
-Clone the repository from GitHub to your local machine:
+#### 1. Clone or Download the Repository from GitHub:
+
+**Option 1: Clone the repository from GitHub to your local machine:**
 ```bash
 git clone https://github.com/LawrenceLee91/todomvc-test-automation
 ```
 **OR** 
 
-Download the zipped project from GitHub Repository
-```bash
-https://github.com/LawrenceLee91/todomvc-test-automation
-```
-
+**Option 2: Download the zipped project from GitHub Repository:**
+- Go to the GitHub repository: https://github.com/LawrenceLee91/todomvc-test-automation
+- On the GitHub repository page, look for the green button labeled "Code". 
+- Click the "Code" button to open a dropdown.
+- Click "Download ZIP". 
+- Unzip the file.
+  
 #### 2. Open the solution in Visual Studio.
 
 #### 3. Install Dependencies via NuGet Package Manager in Visual Studio:
-1) Navigate to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
-2) In the NuGet Package Manager:
+- Navigate to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
+- In the NuGet Package Manager:
     - Select the **Browse** tab.
     - Search for the required package (e.g., ExtentReport).
     - Click Install for each package listed [above](#NuGet-Packages).
