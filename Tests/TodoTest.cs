@@ -345,7 +345,7 @@ namespace TodoMVC.Tests
             Assert.That(allItems.Contains("Task B"), "Active Todo 'Task C' is not displayed.");
             Assert.That(allItems.Contains("Task C"), "Active Todo 'Task A' is not displayed.");
 
-            _test.Pass("Test case: Filter Completed Todos passed successfully.");
+            _test.Pass("Test case: Filter All Todos passed successfully.");
         }
 
         [Test]
@@ -356,7 +356,7 @@ namespace TodoMVC.Tests
             bool isInputFieldCleared = _genericFunction.IsElementVisible(_todoPage.TxtNewTodo_Locator);
             Assert.That(isInputFieldCleared, "An empty Todo is added.");
 
-            _test.Pass("Test case: Filter Completed Todos passed successfully.");
+            _test.Pass("Test case: Add Empty Todo passed successfully.");
         }
 
         [Test]
