@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# IDE - specific configuration
+.vs/
+
+# Dynamic Report genenerated upon testing
+/Report_*/
