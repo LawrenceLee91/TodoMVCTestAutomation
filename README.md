@@ -197,7 +197,7 @@ TodoMVCTestAutomation/
 ### 1. Clone the Repository
 Clone the repository from GitHub to your local machine:
 ```bash
-git clone https://github.com/LawrenceLee91/law-ta-todomvc
+git clone https://github.com/LawrenceLee91/todomvc-test-automation
 ```
 ### 2. Install Prerequisites
 
