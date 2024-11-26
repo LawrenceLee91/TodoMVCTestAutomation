@@ -230,7 +230,7 @@ https://github.com/LawrenceLee91/todomvc-test-automation
 2) In the NuGet Package Manager:
     - Select the **Browse** tab.
     - Search for the required package (e.g., ExtentReport).
-    - Click Install for each package listed above ([NuGet Packages](#NuGet-Packages)).
+    - Click Install for each package listed [above](#NuGet-Packages).
 
 #### 4. Update <code>appsettings.json</code>:
 Update the <code>AppSettings.json</code> to specify the browser you want to use for the tests. The Browser setting can be updated to one of the following:
@@ -257,7 +257,10 @@ Build the solution in Visual Studio.
 ## Running the Tests
 1. Open the solution in Visual Studio.
 2. Open the Test Explorer in Visual Studio (<code>Test > Test Explorer</code>).
-2. Run tests by clicking **Run** on TodoTest or select specifuc test to execute.
+3. Run tests by clicking **Run** on TodoTest or select specifuc test to execute.
+4. After test execution, test results are saved in the <code>Reports/</code> directory:
+    - HTML Report: Provides a detailed execution report.
+    - Screenshots: Captured for failed tests.
    
 ------
 
@@ -301,14 +304,6 @@ The suite covers the following test cases:
 
 ------
 
-## Reporting
-
-Test results are saved in the <code>Reports/</code> directory:
-- **HTML Report**: Provides a detailed execution report.
-- **Screenshots**: Captured for failed tests.
-
-------
-
 ## Implementation Strategy
 
 ### 1. User Story Analysis
@@ -322,7 +317,8 @@ Centralised element locators for the TodoMVC page in the <code>TodoPage.cs</code
 Used NUnit's Assert to validate functionality and handle test results.
 ### 4. Test Execution:
 - **Cross-Browser Compatibility**: The test suite is designed to run on multiple browsers (Chrome, Firefox, Edge) using Selenium WebDriver. 
-- **Reporting**: Integrated ExtentReports for detailed test execution reports.Test results are saved in the Reports/ directory:
+- **Reporting**: Integrated ExtentReports for detailed test execution reports.
+Test results are saved in the <code>Reports/</code> directory:
     - HTML Report: Provides a detailed execution report.
     - Screenshots: Captured for failed tests.
 
