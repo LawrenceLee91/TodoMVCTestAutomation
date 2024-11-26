@@ -13,10 +13,9 @@ The automation is implemented using Selenium WebDriver in C# with NUnit as the t
 3. [Acceptance Criteria](#Acceptance-Criteria)
 4. [Technology Stack](#Technology-Stack)
 5. [Project Structure](#Project-Structure)
-6. [Installation and Setup](#Installation-and-Setup)
+6. [Installation Instructions](#Installation-Instructions)
 7. [Running the Tests](#Running-the-Tests)
 8. [Test Cases](#Test-Cases)
-9. [Reporting](#Reporting)
 9. [Implementation Strategy](#Implementation-Strategy)
 10. [Contact](#Contact)
 
@@ -43,102 +42,6 @@ I should be able to:
 - **Filter Todos**: Given multiple todos with varying statuses, when the user applies a filter (Active, Completed, All), then only the relevant todos should appear.
 
 ### Detailed Criteria
-Please refer to [Test Cases](#Test-Cases)
-
-------
-
-## Technology Stack
-
-- **IDE**: Visual Studio 2022
-- **Programming Language**: C#
-- **Test Framework**: NUnit
-- **Automation Tool**: Selenium WebDriver
-- **Reporting**: ExtentReports
-- **Configuration Management**: appsettings.json
-
-------
-## Project Structure
-
-```bash
-TodoMVCTestAutomation/
-├── Functions/
-│   ├── GenericFunction.cs        # Generic reusable methods
-│   ├── TodoFunction.cs           # Application-specific reusable methods
-├── Pages/
-│   ├── TodoPage.cs               # Page Object Model for TodoMVC
-├── Tests/
-│   ├── BaseTest.cs               # Test initialisation and teardown
-│   ├── TodoTests.cs              # Test cases for TodoMVC
-├── Utilities/
-│   ├── ExtentReportUtil.cs       # Reporting utilities
-│   ├── PathUtil.cs               # Directory and file path helpers
-│   ├── ScreenshotUtil.cs         # Screenshot helper
-├── Reports/                      # Generated reports and screenshots
-│   ├── [Generated dynamically]
-├── AppSetting.json               # Configuration file (e.g., BaseUrl, Browser)
-├── README.txt                    # Documentation for the project
-```
-
-------
-
-## Installation and Setup
-
-### 1. Clone the Repository
-Clone the repository from GitHub to your local machine:
-```bash
-git clone https://github.com/LawrenceLee91/todomvc-test-automation
-```
-### 2. Install Prerequisites
-
-#### Required Tools
-- Visual Studio 2022
-- .Net SDK (9.0)
-
-#### NuGet Packages
-Use Visual Studion's **Nuget Package Manage** to install the following dependencies:
-- <code>ExtentReport</code> (5.0.4)
-- <code>Microsoft.Extensions.Configuration</code> (9.0.0)
-- <code>Microsoft.Extensions.Configuration.Json</code> (9.0.0)
-- <code>Microsoft.NET.Test.Sdk</code> (17.12.0)
-- <code>NUnit</code> (4.2.2)
-- <code>NUnit3TestAdapter</code> (4.6.0)
-- <code>Selenium WebDriver</code> (4.27.0)
-
-### 3. Install Dependencies via NuGet in Visual Studio
-1. Open the solution in Visual Studio.
-2. Navigate to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
-3. In the NuGet Package Manager:
-    - Select the **Browse** tab.
-    - Search for the required package (e.g., ExtentReport).
-    - Click Install for each package listed above.
-
-4. Confirm installation for each dependency.
-
-### 4. Update <code>appsettings.json</code>
-```json
-{
-    "BaseUrl": "https://todomvc.com/examples/react/dist/",
-    "Browser": "Chrome",
-    "PageLoadTimeout": 0
-}
-```
-Note: "Browser" can be "Chrome", "Edge" or "Firefox"
-
-### 5. Build the Solution
-Build the solution in Visual Studio.
-
-------
-
-## Running the Tests
-
-1. Open the Test Explorer in Visual Studio (<code>Test > Test Explorer</code>).
-2. Run all tests by clicking **Run** on TodoTest or select specifuc test to execute.
-   
-------
-
-## Test Cases
-
-The suite covers the following test cases:
 
 #### TC001_AddTodoItem
 - **Scenario**: Add a single todo item
@@ -255,6 +158,133 @@ The suite covers the following test cases:
 
 ------
 
+## Technology Stack
+
+- **IDE**: Visual Studio 2022
+- **Programming Language**: C#
+- **Test Framework**: NUnit
+- **Automation Tool**: Selenium WebDriver
+- **Reporting**: ExtentReports
+- **Configuration Management**: appsettings.json
+
+------
+## Project Structure
+
+```bash
+TodoMVCTestAutomation/
+├── Functions/
+│   ├── GenericFunction.cs        # Generic reusable methods
+│   ├── TodoFunction.cs           # Application-specific reusable methods
+├── Pages/
+│   ├── TodoPage.cs               # Page Object Model for TodoMVC
+├── Tests/
+│   ├── BaseTest.cs               # Test initialisation and teardown
+│   ├── TodoTests.cs              # Test cases for TodoMVC
+├── Utilities/
+│   ├── ExtentReportUtil.cs       # Reporting utilities
+│   ├── PathUtil.cs               # Directory and file path helpers
+│   ├── ScreenshotUtil.cs         # Screenshot helper
+├── Reports/                      # Generated reports and screenshots
+│   ├── [Generated dynamically]
+├── AppSetting.json               # Configuration file (e.g., BaseUrl, Browser)
+├── README.txt                    # Documentation for the project
+```
+
+------
+
+## Installation Instructions
+
+### Prerequisites
+
+#### Required Tools
+- Visual Studio 2022
+- .Net SDK (9.0)
+
+#### NuGet Packages
+Use Visual Studion's **Nuget Package Manage** to install the following dependencies:
+- <code>ExtentReport</code> (5.0.4)
+- <code>Microsoft.Extensions.Configuration</code> (9.0.0)
+- <code>Microsoft.Extensions.Configuration.Json</code> (9.0.0)
+- <code>Microsoft.NET.Test.Sdk</code> (17.12.0)
+- <code>NUnit</code> (4.2.2)
+- <code>NUnit3TestAdapter</code> (4.6.0)
+- <code>Selenium WebDriver</code> (4.27.0)
+
+### Steps:
+#### 1. Clone the repository:
+Clone the repository from GitHub to your local machine:
+```bash
+git clone https://github.com/LawrenceLee91/todomvc-test-automation
+```
+**OR** 
+
+Download the zipped project from GitHub Repository
+```bash
+https://github.com/LawrenceLee91/todomvc-test-automation
+```
+
+#### 2. Open the solution in Visual Studio.
+
+#### 3. Install Dependencies via NuGet Package Manager in Visual Studio:
+1) Navigate to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
+2) In the NuGet Package Manager:
+    - Select the **Browse** tab.
+    - Search for the required package (e.g., ExtentReport).
+    - Click Install for each package listed above ([NuGet Packages](#NuGet-Packages)).
+
+#### 4. Update <code>appsettings.json</code>:
+Update the <code>AppSettings.json</code> to specify the browser you want to use for the tests. The Browser setting can be updated to one of the following:
+- Chrome
+- Edge
+- Firefox
+
+Example configuration in <code>AppSettings.json</code>:
+```json
+{
+    "BaseUrl": "https://todomvc.com/examples/react/dist/",
+    "Browser": "Chrome",
+    "PageLoadTimeout": 0
+}
+```
+
+#### 5. Build the project.
+Build the solution in Visual Studio.
+
+#### 6. Run the tests.
+
+------
+
+## Running the Tests
+1. Open the solution in Visual Studio.
+2. Open the Test Explorer in Visual Studio (<code>Test > Test Explorer</code>).
+2. Run tests by clicking **Run** on TodoTest or select specifuc test to execute.
+   
+------
+
+## Test Cases
+
+The suite covers the following test cases:
+
+**TC001_AddTodoItem**: Add a single todo item
+**TC002_CompleteTodoItem**: Mark a todo item as completed 
+**TC003_ClearCompletedTodos**: Clear completed todo item 
+**TC004_AddMultipleTodoItems**: Add multiple todo items 
+**TC005_MarkMultipleTodoItemsAsCompleted**: Mark all todo items as completed
+**TC006_MarkAndUmarkWithToggleAllButton**: Mark all todo items as completed and unmark them using "Toggle All" button
+**TC007_ClearAllCompletedTodos**: Clear all completed todo items 
+**TC008_EditTodoItem**: Edit a todo item  
+**TC009_DeleteTodoItem**: Delete a todo item 
+**TC010_VerifyActiveTodoCounter**: Verify the active todo counter 
+**TC011_FilterActiveTodos**: Filter active todos 
+**TC012_FilterCompletedTodos**: Filter completed todos 
+**TC013_FilterAllTodos**: Filter all todos 
+**TC014_AddEmptyTodo**: Attempt to add an empty todo item 
+**TC015_VerifyClearCompletedButtonVisibility**: Verify visibility of the "Clear completed" button 
+**TC016_InvalidEditTodoItemEmpty**: Attempt to edit a todo item to an empty string
+**TC017_InvalidEditTodoItemSingleChar**: Attempt to edit a todo item to a single character 
+
+------
+
 ## Reporting
 
 Test results are saved in the <code>Reports/</code> directory:
@@ -276,7 +306,9 @@ Centralised element locators for the TodoMVC page in the <code>TodoPage.cs</code
 Used NUnit's Assert to validate functionality and handle test results.
 ### 4. Test Execution:
 - **Cross-Browser Compatibility**: The test suite is designed to run on multiple browsers (Chrome, Firefox, Edge) using Selenium WebDriver. 
-- **Reporting**: Integrated ExtentReports for detailed test execution reports.
+- **Reporting**: Integrated ExtentReports for detailed test execution reports.Test results are saved in the Reports/ directory:
+    - HTML Report: Provides a detailed execution report.
+    - Screenshots: Captured for failed tests.
 
 ------
 
