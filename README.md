@@ -266,21 +266,37 @@ Build the solution in Visual Studio.
 The suite covers the following test cases:
 
 **TC001_AddTodoItem**: Add a single todo item
+
 **TC002_CompleteTodoItem**: Mark a todo item as completed 
+
 **TC003_ClearCompletedTodos**: Clear completed todo item 
+
 **TC004_AddMultipleTodoItems**: Add multiple todo items 
+
 **TC005_MarkMultipleTodoItemsAsCompleted**: Mark all todo items as completed
+
 **TC006_MarkAndUmarkWithToggleAllButton**: Mark all todo items as completed and unmark them using "Toggle All" button
+
 **TC007_ClearAllCompletedTodos**: Clear all completed todo items 
+
 **TC008_EditTodoItem**: Edit a todo item  
+
 **TC009_DeleteTodoItem**: Delete a todo item 
+
 **TC010_VerifyActiveTodoCounter**: Verify the active todo counter 
+
 **TC011_FilterActiveTodos**: Filter active todos 
+
 **TC012_FilterCompletedTodos**: Filter completed todos 
+
 **TC013_FilterAllTodos**: Filter all todos 
+
 **TC014_AddEmptyTodo**: Attempt to add an empty todo item 
+
 **TC015_VerifyClearCompletedButtonVisibility**: Verify visibility of the "Clear completed" button 
+
 **TC016_InvalidEditTodoItemEmpty**: Attempt to edit a todo item to an empty string
+
 **TC017_InvalidEditTodoItemSingleChar**: Attempt to edit a todo item to a single character 
 
 ------
