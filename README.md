@@ -17,7 +17,8 @@ The automation is implemented using Selenium WebDriver in C# with NUnit as the t
 7. [Running the Tests](#Running-the-Tests)
 8. [Test Cases](#Test-Cases)
 9. [Implementation Strategy](#Implementation-Strategy)
-10. [Contact](#Contact)
+10. [License](#License)
+11. [Contact](#Contact)
 
 ------
 
@@ -324,6 +325,11 @@ Used NUnit's Assert to validate functionality and handle test results.
 Test results are saved in the <code>Reports/</code> directory:
     - HTML Report: Provides a detailed execution report.
     - Screenshots: Captured for failed tests.
+
+------
+
+## License
+This project is not licensed.
 
 ------
 
