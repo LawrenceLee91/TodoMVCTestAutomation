@@ -187,7 +187,7 @@ TodoMVCTestAutomation/
 │   ├── ScreenshotUtil.cs         # Screenshot helper
 ├── Reports/                      # Generated reports and screenshots
 │   ├── [Generated dynamically]
-├── AppSetting.json               # Configuration file (e.g., BaseUrl, Browser)
+├── appsettings.json               # Configuration file (e.g., BaseUrl, Browser)
 ├── README.txt                    # Documentation for the project
 ```
 
