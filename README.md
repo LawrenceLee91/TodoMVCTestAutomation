@@ -315,7 +315,7 @@ Each functionality (add, edit, filter, mark...) is mapped to individual test cas
 ### 2.  Test Design
 - **Page Object Model (POM)**:
 Centralised element locators for the TodoMVC page in the <code>TodoPage.cs</code>. This ensures maintainability, as UI changes can be managed in a single file. 
-- **Functions Layer**: Implemente actions, UI interactions and functions in <code>TodoFunction.cs</code>for operations like adding, deleting, and editing todos. This abstraction allows for reusability across different test cases and ensures that the code remains DRY (Don’t Repeat Yourself).
+- **Functions Layer**: Implemented actions, UI interactions and functions in <code>TodoFunction.cs</code>for operations like adding, deleting, and editing todos. This abstraction allows for reusability across different test cases and ensures that the code remains DRY (Don’t Repeat Yourself).
 - **Test Layer**: Write separate test methods for each acceptance criterion in <code>TodoTest.cs</code>, ensuring that tests are independent and cover all the critical aspects of the application.
 ### 3. Assertions: 
 Used NUnit's Assert to validate functionality and handle test results.
